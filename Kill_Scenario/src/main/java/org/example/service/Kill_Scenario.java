@@ -39,23 +39,16 @@ public class Kill_Scenario {
     @POST
     @Path("/")
     public String post() {
-        // TODO: Implementation for HTTP GET request
+        // TODO: Implementation for HTTP POST request
         System.out.println("POST invoked");
         return "Hello from WSO2 MSF4J";
 	}
+
 @GET
-	public String mehod1(){
-    //public static void main(String[] args) {
-        // write your code here
-        // TODO: Implementation for HTTP GET request
-        //System.out.println("GET invoked");
-        //return "Hello from WSO2 MSF4J";
-	//System.out.println("");
-		
+	public String resource1(){
 
-
-
-        ProcessBuilder pb = new ProcessBuilder("/home/vasanthan/Desktop/pgmcheck.sh", "myArg1", "myArg2");
+	// TODO: Implementation for HTTP GET request
+        ProcessBuilder pb = new ProcessBuilder("/home/vasanthan/msservice-samples/Kill_Scenario/kill_app.sh", "myArg1", "myArg2");
         try {
             Process p = pb.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
